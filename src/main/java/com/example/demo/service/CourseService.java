@@ -21,6 +21,21 @@ public class CourseService {
         return courseRepository.findAllClasses();
     }
 
+    public List<Course> addCourses(){
+
+        return courseRepository.addCourses();
+    }
+
+    public List<Course> updateCourses(){
+
+        return courseRepository.updateCourses();
+    }
+
+    public List<Course> deleteCourses(){
+
+        return courseRepository.deleteCourses();
+    }
+
     public List<Course> searchByCourseName(String input){
 
         return courseRepository.findCourseByName(input);
